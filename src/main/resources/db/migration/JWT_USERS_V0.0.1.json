@@ -1,0 +1,51 @@
+[
+  {
+  	"username": "greg",
+  	"password": "test",
+  	"permissions": [
+  		"World"
+  	]
+  },
+  {
+  	"username": "vento",
+  	"password": "test",
+  	"permissions": [
+  		"World"
+  	]
+  },
+  {
+  	"username": "ripley",
+  	"password": "test",
+  	"permissions": [
+  		"World"
+  	]
+  },
+  {
+  	"username": "jay",
+  	"password": "test",
+  	"permissions": [
+  		"World"
+  	]
+  },
+  {
+  	"username": "purah",
+  	"password": "test",
+  	"permissions": [
+  		"World"
+  	]
+  },
+  {
+  	"username": "ross",
+  	"password": "test",
+  	"permissions": [
+  		"World"
+  	]
+  },
+  {
+  	"username": "madz",
+  	"password": "test",
+  	"permissions": [
+  		"World"
+  	]
+  }
+]
