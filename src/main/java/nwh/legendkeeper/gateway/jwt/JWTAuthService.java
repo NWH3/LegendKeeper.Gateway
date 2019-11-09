@@ -24,7 +24,7 @@ import static java.util.Collections.emptyList;
  */
 public class JWTAuthService {
     
-    private static final long EXPIRATION_TIME = 1_800_000; // 30 minutes
+    private static final long EXPIRATION_TIME = 3600000; // 1 hour
     private static final String TOKEN_PREFIX = "Bearer";
     private static final String HEADER_STRING = "Authorization";
 

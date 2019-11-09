@@ -76,15 +76,15 @@ public class GatewayService {
 		return publicKeyStr;
     }
 	
-	public String logout(String authorization) {
-		String result = "Successfully logged out!";
+	public LogoutResponse logout(String authorization) {
+		LogoutResponse result = new LogoutResponse("Success");
 		JWTUser foundModel = userRepository.findOneByJwt(authorization);
 		if (foundModel != null) {
 			foundModel.setActive(0);
 			foundModel.setDateUpdated(new Date().toString());
 			userRepository.save(foundModel);
 		} else {
-			result = "Failed to log out with provided request...";
+			result.setStatus("Failure");
 		}
 		return result;
 	}

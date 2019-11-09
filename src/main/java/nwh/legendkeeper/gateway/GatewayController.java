@@ -40,8 +40,8 @@ public class GatewayController {
 	 * @return success or failure message
 	 */
 	@GetMapping("/logout")
-    public ResponseEntity<String> logout(@RequestHeader(value = "Authorization") String auth) {
-		String result = gatewayService.logout(auth);
-		return new ResponseEntity<String>(result, HttpStatus.OK);
+    public ResponseEntity<LogoutResponse> logout(@RequestHeader(value = "Authorization") String auth) {
+		LogoutResponse result = gatewayService.logout(auth);
+		return new ResponseEntity<LogoutResponse>(result, HttpStatus.OK);
     }
 }
